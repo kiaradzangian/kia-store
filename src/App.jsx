@@ -6,6 +6,7 @@ function App() {
     <>
       <Header />
       <hr></hr>
+      <h1>hi</h1>
       <Story />
       <br></br>
     </>
