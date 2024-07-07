@@ -1,0 +1,9 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/fonts/vazir/Vazirmatn-ExtraLight.ttf);
+  }
+  
+  *{
+    font-family: myFirstFont;
+    
+  }
