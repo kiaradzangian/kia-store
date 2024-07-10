@@ -1,0 +1,52 @@
+{
+    "data" : [
+        {
+            "id":0,
+            "img":"https://cdn-icons-png.flaticon.com/512/566/566021.png",
+            "text":"ویژگی بیشتر"
+        },
+
+        
+        {
+            "id":1,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/787a330f980d0cb7583d5d3316a868757535ea79_1708970899.png",
+            "text":"دیجی جت"
+        },
+        {
+            "id":2,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/ac127167132653d14c758748b07824a6a7643a31_1708971047.png",
+            "text":"دیجی پی"
+        },
+        {
+            "id":3,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/6fa326f7dcd8475cdc7656a9752bc6f483241939_1716238915.png",
+            "text":"دیجی پلاس"
+        },
+ 
+        {
+            "id":4,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/7493e66e491c18d699274a48a53a9dfcb8aa2e93_1717230600.png",
+            "text":"حراج استایل"
+        },
+        {
+            "id":5,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/2f34563cf96880fc578e08fee355bc1dac50fe9c_1718718377.png",
+            "text":"فروش حضوری "
+        },
+        {
+            "id":6,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/d0dc0edf879e963e9cff31fd57b3f101743ddac8_1707297619.png",
+            "text":" گیفت کارت "
+        },
+        {
+            "id":6,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/e31bc5ab513c21bd166409c3012d8d3e3a38b7b9_1718775442.png",
+            "text":"موبایل کارکرده "
+        },
+        {
+            "id":7,
+            "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/afb3c938fd3149d7587b59919bfc500a461693a6_1709571657.png",
+            "text":"سوپر مارکت"
+        }
+    ]
+}

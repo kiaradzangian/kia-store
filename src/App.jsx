@@ -1,13 +1,33 @@
 import { useState } from 'react';
 import Header from './header/Header';
 import Story from './story/Story';
+import Navigation from './navigation/Navigation';
+import Image from './image/Image';
+import Cards from './cards/Cards';
+import Market from './market/Market';
+import Aks from './aks/Aks';
+
 function App() {
   return (
     <>
-      <Header />
-      <hr></hr>
-      <h1>hi</h1>
-      <Story />
+      <Header /> <Story />
+      <Navigation />
+      <div className=''>
+        <Image />
+      </div>
+      <div className='bg-red-600 p-3 m-3  rounded-2xl'>
+        <Cards />
+      </div>
+      <div className='bg-slate-100 p-4 m-4 rounded-3xl'>
+        <Market />
+      </div>
+      <Aks />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
     </>
   );
