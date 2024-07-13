@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div>
       <img src={h} alt='Logo' />
-      <nav class='  flex justify-end w-full  border-red-700 dark:bg-red-900 flex flex-wrap items-center justify-between  p-4 '>
+      <nav class='w-full   border-red-700 dark:bg-red-900 flex flex-wrap items-center justify-between  p-4 '>
         <a
           href='https://flowbite.com/'
           class=' flex justify-end flex items-center space-x-3 rtl:space-x-reverse'

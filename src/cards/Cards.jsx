@@ -4,6 +4,25 @@ export default function Cards() {
   return (
     <div>
       <div className='flex justify-around '>
+        <div className='flex flex-col'>
+          <div className='p-4'>
+            <img
+              className='w-24 gap-4  '
+              src={'https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg'}
+              alt='Logo'
+            />
+
+            <img
+              className=''
+              src={'https://www.digikala.com/statics/img/svg/specialCarousel/Amazing.svg'}
+              alt='Logo'
+            />
+            <a href=''>
+              {' '}
+              <p className='text-center p-4 text-red-50 font-bold'>بیشتر</p>
+            </a>
+          </div>
+        </div>
         <div class='w-40 h-1/2 p-1 bg-white  shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-s-lg'>
           <img
             src={
@@ -59,7 +78,7 @@ export default function Cards() {
             }
           />
           <div class='p-1'>
-            <h2 class='text-xl font-extralight '> موبایل دکمه ای</h2>
+            <h2 class='text-xl '> موبایل دکمه ای</h2>
             <p class='text-gray-600'>حافظه 32 و 2 سیمکارت خور</p>
             <div class='flex justify-between items-center mt-4'></div>
           </div>
@@ -72,6 +91,7 @@ export default function Cards() {
               'https://dkstatics-public.digikala.com/digikala-products/5039e2fbccf6c2058d5d30531c4b0b1f0258b653_1653644013.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80'
             }
           />
+
           <div class='p-1'>
             <h2 class='text-xl '> هندسفری سیمی</h2>
             <p class='text-gray-600'>هندسفری سیمی با گارنتی </p>
@@ -92,9 +112,9 @@ export default function Cards() {
             <div class='flex justify-between items-center mt-4'></div>
           </div>
         </div>
-        <div class='  w-40 h-1/2 p-2 bg-white  shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out rounded-r-xl'>
+        <div class=' rounded-l-lg  w-40 h-1/2 p-2 bg-white  shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out'>
           <img
-            class='w-full  object-cover rounded-t-lg text-sm '
+            class='w-full  object-cover  text-sm '
             alt='Card Image'
             src={
               'https://dkstatics-public.digikala.com/digikala-products/908c3f6922ec35a73446b774320791ea67eab2f9_1698223162.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80'
@@ -103,26 +123,9 @@ export default function Cards() {
           <div class='p-1'>
             <h6 class='text-lg'>هندسفری بلوتوثی</h6>
             <h6 class='text-gray-600'>هندسفری بلوتوٍثی مارک سامسونگ</h6>
-            <div class='flex justify-between items-center mt-4 text-sms'></div>
+            <div class=' rounded-l-lg flex justify-between items-center mt-4 text-sms   '></div>
           </div>
         </div>{' '}
-        <div className='flex flex-col'>
-          <img
-            className='w-24  '
-            src={'https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg'}
-            alt='Logo'
-          />
-
-          <img
-            className='gap-14'
-            src={'https://www.digikala.com/statics/img/svg/specialCarousel/Amazing.svg'}
-            alt='Logo'
-          />
-          <a href=''>
-            {' '}
-            <p className='text-center p-4 text-red-50 font-bold'>بیشتر</p>
-          </a>
-        </div>
       </div>
     </div>
   );

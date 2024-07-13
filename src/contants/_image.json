@@ -1,11 +1,6 @@
 {
     "data" : [
-        {
-            "id":0,
-            "img":"https://cdn-icons-png.flaticon.com/512/566/566021.png",
-            "text":"ویژگی بیشتر"
-        },
-
+    
         
         {
             "id":1,
@@ -47,6 +42,12 @@
             "id":7,
             "img":"https://dkstatics-public.digikala.com/digikala-bellatrix/afb3c938fd3149d7587b59919bfc500a461693a6_1709571657.png",
             "text":"سوپر مارکت"
+        } ,
+           {
+            "id":0,
+            "img":"https://cdn-icons-png.flaticon.com/512/566/566021.png",
+            "text":"ویژگی بیشتر"
         }
+
     ]
 }

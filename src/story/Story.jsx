@@ -11,7 +11,7 @@ export default function Story() {
           return (
             <a href='' key={story.id}>
               <img
-                className='w-17 h-20 rounded-full ring-2 ring-purple-500 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-600 '
+                className='w-17 h-20 rounded-full ring-2 ring-purple-600 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-200 '
                 src={story.img}
               />
               <h6 className='justify-center  font-bold flex text-xs p-1  '>{story.text}</h6>
@@ -21,7 +21,7 @@ export default function Story() {
       </div>
 
       <img
-        className='w-screen h-96'
+        className='w-screen h-80'
         src={
           'https://dkstatics-public.digikala.com/digikala-adservice-banners/d252a1866a08c3a12ccca97549d650f9af7fa3b3_1719999669.gif?x-oss-process=image?x-oss-process=image/format,webp'
         }
