@@ -15,13 +15,19 @@ export default function Header() {
 
           <span class=' flex justify-end self-center text-2xl font-semibold whitespace-nowrap dark:text-white'></span>
         </a>
-        <div class='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse'>
+        <div class='flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse gap-3'>
           <button
             type='button'
             class=' flex justify-end text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800'
           >
             ورود|ثبت نام
           </button>
+          <br></br>
+          <img
+            className='w-8'
+            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX31oL9dkS6rKI8_pgP7yVoo0irwabnEDrpQ&s'
+            alt=''
+          />
 
           <button
             data-collapse-toggle='navbar-cta'
