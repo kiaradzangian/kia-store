@@ -27,9 +27,8 @@ function App() {
       </div>
       <Aks />
       <br></br>
-      <br></br>
 
-      <div className='p-4 gap-4'>
+      <div className='p-4 '>
         <Dastebandi />
       </div>
       <Mahbob />

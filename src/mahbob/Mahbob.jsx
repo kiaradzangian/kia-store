@@ -2,7 +2,7 @@ import React from 'react';
 import { data as mahbobs } from '../contants/_mahbob.json';
 export default function Mahbob() {
   return (
-    <div className='p-6 m-2 rounded-3xl border-2'>
+    <div className='p-6 m-4 rounded-3xl border-2'>
       <h1 className=' flex justify-center font  text-2xl'>⭐محبوب ترین برند ها</h1>{' '}
       <div className=' flex justify-around  p-4 '>
         {mahbobs.map((mahbob) => {

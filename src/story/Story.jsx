@@ -14,7 +14,9 @@ export default function Story() {
                 className='w-17 h-20 rounded-full ring-2 ring-purple-600 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-200 '
                 src={story.img}
               />
-              <h6 className='justify-center  font-bold flex text-xs p-1  '>{story.text}</h6>
+              <div className='m-2'>
+                <h6 className='justify-center  font-bold flex text-xs p-1  '>{story.text}</h6>
+              </div>
             </a>
           );
         })}

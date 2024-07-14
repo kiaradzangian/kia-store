@@ -5,7 +5,7 @@ export default function Cards() {
     <div>
       <div className='flex justify-around '>
         <div className='flex flex-col'>
-          <div className='p-4'>
+          <div className='p-2'>
             <img
               className='w-24 gap-4  '
               src={'https://www.digikala.com/statics/img/svg/specialCarousel/Amazings.svg'}
@@ -33,7 +33,7 @@ export default function Cards() {
           />
 
           <div class='p-2'>
-            <h2 class='text-xl  '>ناتینگ فون 2 </h2>
+            <h2 class='text-sm  '>ناتینگ فون 2 </h2>
             <p class='text-gray-600'>رم 8 و 128 گیگ حافظه داخلی</p>
             <div class='flex justify-between items-center mt-2'></div>
           </div>
@@ -49,7 +49,7 @@ export default function Cards() {
             />
 
             <div class='p-2'>
-              <h2 class='text-xl  '> موتورولا e2</h2>
+              <h2 class='text-sm  '> موتورولا e2</h2>
               <p class='text-gray-600'>رم 4 و 128 گیگ حافظه داخلی</p>
               <div class='flex justify-between items-center mt-2'></div>
             </div>
@@ -64,7 +64,7 @@ export default function Cards() {
             }
           />
           <div class='p-1'>
-            <h2 class='text-xl  '>نوکیا قدیمی</h2>
+            <h2 class='text-sm  '>نوکیا قدیمی</h2>
             <p class='text-gray-600'>حافظه 16 و تک سیمکارت خور</p>
             <div class='flex justify-between items-center mt-4'></div>
           </div>
@@ -78,7 +78,7 @@ export default function Cards() {
             }
           />
           <div class='p-1'>
-            <h2 class='text-xl '> موبایل دکمه ای</h2>
+            <h2 class='text-sm '> موبایل دکمه ای</h2>
             <p class='text-gray-600'>حافظه 32 و 2 سیمکارت خور</p>
             <div class='flex justify-between items-center mt-4'></div>
           </div>
@@ -93,7 +93,7 @@ export default function Cards() {
           />
 
           <div class='p-1'>
-            <h2 class='text-xl '> هندسفری سیمی</h2>
+            <h2 class='text-sm '> هندسفری سیمی</h2>
             <p class='text-gray-600'>هندسفری سیمی با گارنتی </p>
             <div class='flex justify-between items-center mt-4'></div>
           </div>
@@ -107,7 +107,7 @@ export default function Cards() {
             }
           />
           <div class='p-1'>
-            <h6 class='text-xl   '>هدفون بلوتوثی</h6>
+            <h6 class='text-sm   '>هدفون بلوتوثی</h6>
             <p class='text-gray-600'>هدفون بلوتوثی با گارانتی 3 ماهه</p>
             <div class='flex justify-between items-center mt-4'></div>
           </div>
@@ -121,7 +121,7 @@ export default function Cards() {
             }
           />
           <div class='p-1'>
-            <h6 class='text-lg'>هندسفری بلوتوثی</h6>
+            <h6 class='text-sm'>هندسفری بلوتوثی</h6>
             <h6 class='text-gray-600'>هندسفری بلوتوٍثی مارک سامسونگ</h6>
             <div class=' rounded-l-lg flex justify-between items-center mt-4 text-sms   '></div>
           </div>
