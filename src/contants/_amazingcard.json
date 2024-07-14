@@ -2,33 +2,46 @@
     "data" : [
         {
             "id":1,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/40aee47791274d3e6fe2c1c7ff818eb20dbc4f93_1716633266.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"20%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/d49e0729e01a8b4301f1d616cdade41789ad5205_1709364522.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":"ناتینگ فون 2",
+            "information":"رم 8 و 128 گیگ حافظه داخلی"
+            
         },
         {
             "id":2,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/ba6bfd30449fc2055f8d6d5ae66edf56d9d0c48d_1661771042.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"25%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/10b3ddf4ed5afd60ba74e4d5e2c1866d79716c7f_1675155251.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":"موتورولا e2",
+            "information":"رم 4 و 128 گیگ حافظه داخلی"
         },
         {
             "id":3,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/79614762a83c72827adb5940fee9a27309233426_1661770880.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"30%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/3dbc56ad9ae7501ac16731a111ae465dd33e8404_1719228862.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":"نوکیا قدیمی",
+            "information":"حافظه 16 و تک سیمکارت خور"
         },
         {
             "id":4,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/f7cc09f4925274b6c43726b3d87aedab61fee35a_1710326197.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"50%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/34a0afd6eb9eacbf51bbe484e4f978ef3e4065a8_1693659067.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":" موبایل دکمه ای",
+            "information":"حافظه 32 و 2 سیمکارت خور"
         },
         {
             "id":5,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/6c70970b29d7b99a2ef9374223f38b6e34a20c42_1698649388.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"70%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/5039e2fbccf6c2058d5d30531c4b0b1f0258b653_1653644013.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":" هندسفری سیمی",
+            "information":"هندسفری سیمی با گارنتی "
         },
         {
             "id":6,
-            "img":"https://dkstatics-public.digikala.com/digikala-products/79614762a83c72827adb5940fee9a27309233426_1661770880.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
-            "discount":"45%"
+            "img":"https://dkstatics-public.digikala.com/digikala-products/001a96c9e436fef968fb71b1a59226711e03acb0_1712072503.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":"هدفون بلوتوثی",
+            "information":"هدفون بلوتوثی با گارانتی 3 ماهه"
+        },
+        {
+            "id":4,
+            "img":"https://dkstatics-public.digikala.com/digikala-products/908c3f6922ec35a73446b774320791ea67eab2f9_1698223162.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80",
+            "name":" هندسفری بلوتوثی",
+            "information":"هندسفری بلوتوٍثی مارک سامسونگ"
         }
     ]
     }
