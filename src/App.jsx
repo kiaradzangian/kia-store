@@ -8,7 +8,6 @@ import Market from './market/Market';
 import Aks from './aks/Aks';
 import Dastebandi from './dastebandi/Dastebandi';
 import Mahbob from './mahbob/Mahbob';
-
 function App() {
   return (
     <>
