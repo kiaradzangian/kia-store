@@ -23,11 +23,6 @@ export default function Header() {
             ورود|ثبت نام
           </button>
           <br></br>
-          <img
-            className='w-8 h-8'
-            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX31oL9dkS6rKI8_pgP7yVoo0irwabnEDrpQ&s'
-            alt=''
-          />
 
           <button
             data-collapse-toggle='navbar-cta'
