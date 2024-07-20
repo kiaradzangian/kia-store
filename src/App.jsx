@@ -10,20 +10,30 @@ import Dastebandi from './dastebandi/Dastebandi';
 import Mahbob from './mahbob/Mahbob';
 import Towpicture from './mahbob/Towpicture';
 import Digiclube from './dijiclue/Digiclube';
+import Footer from './Footer';
+
 function App() {
+  const [state, setState] = useState('kiarad');
+  function handelerState(event) {
+    setState(event.currentTarget.value);
+  }
+
   return (
     <>
+    
       <Header />
-
+      <p>{state}</p>
       <Story />
 
       {/* <Navigation /> */}
       <div className=''>
         <Image />
       </div>
+
       <div className='bg-rose-500 p-3 m-3  rounded-2xl'>
         <Cards />
       </div>
+
       <div className='bg-slate-100 p-4 m-4 rounded-3xl'>
         <Market />
       </div>
@@ -35,10 +45,12 @@ function App() {
       <Mahbob />
       <Towpicture />
       <Digiclube />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+
+      <div className='p-6'>
+        <hr></hr>
+        <Footer />
+        <input type='text' value={state} onChange={(event) => handelerState(event)} />
+      </div>
     </>
   );
 }
