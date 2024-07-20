@@ -8,6 +8,7 @@ import Market from './market/Market';
 import Aks from './aks/Aks';
 import Dastebandi from './dastebandi/Dastebandi';
 import Mahbob from './mahbob/Mahbob';
+import Towpicture from './mahbob/Towpicture';
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
         <Dastebandi />
       </div>
       <Mahbob />
+      <Towpicture />
 
       <br></br>
       <br></br>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { data as mahbobs } from '../contants/_mahbob.json';
+
 export default function Mahbob() {
   return (
     <div className='p-6 m-4 rounded-3xl border-2'>
