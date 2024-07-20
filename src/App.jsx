@@ -9,6 +9,7 @@ import Aks from './aks/Aks';
 import Dastebandi from './dastebandi/Dastebandi';
 import Mahbob from './mahbob/Mahbob';
 import Towpicture from './mahbob/Towpicture';
+import Digiclube from './dijiclue/Digiclube';
 function App() {
   return (
     <>
@@ -27,14 +28,13 @@ function App() {
         <Market />
       </div>
       <Aks />
-      <br></br>
 
-      <div className='p-4 '>
+      <div className=''>
         <Dastebandi />
       </div>
       <Mahbob />
       <Towpicture />
-
+      <Digiclube />
       <br></br>
       <br></br>
       <br></br>
