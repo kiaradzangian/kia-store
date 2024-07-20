@@ -3,7 +3,7 @@ import React from 'react';
 export default function Digiclube() {
   return (
     <div>
-      <div className='bg-sky-700 rounded-r-lg m-4 rounded-md'>
+      <div className='bg-sky-700 rounded-r-lg m-4 rounded-lg'>
         <div className=''>
           {' '}
           <div className='flex justify-between'>
@@ -33,6 +33,12 @@ export default function Digiclube() {
           </div>
         </div>
       </div>
+
+      <img
+        className=' rounded-3xl p-2 h-62'
+        src='https://dkstatics-public.digikala.com/digikala-adservice-banners/bf98decb537473350fd57ed1f45e81b849256bb8_1720971651.jpg?x-oss-process=image/quality,q_95/format,webp'
+        alt=''
+      />
     </div>
   );
 }

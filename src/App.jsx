@@ -29,7 +29,7 @@ function App() {
       </div>
       <Aks />
 
-      <div className=''>
+      <div className='p-4'>
         <Dastebandi />
       </div>
       <Mahbob />
