@@ -21,7 +21,7 @@ function App() {
     <>
       <Headers />
 
-      <p>{state}</p>
+      {/* <p>{state}</p> */}
       <Story />
 
       {/* <Navigation /> */}
