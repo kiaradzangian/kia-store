@@ -15,7 +15,7 @@ export default function Story() {
                 src={story.img}
               />
               <div className='m-2'>
-                <h6 className='justify-center  font-bold flex text-xs p-1  '>{story.text}</h6>
+                <h6 className='text-center font-bold flex text-xs p-1  '>{story.text}</h6>
               </div>
             </a>
           );
