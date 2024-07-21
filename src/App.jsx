@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Header from './header/Header';
 import Story from './story/Story';
 import Navigation from './navigation/Navigation';
 import Image from './image/Image';
@@ -11,7 +10,7 @@ import Mahbob from './mahbob/Mahbob';
 import Towpicture from './mahbob/Towpicture';
 import Digiclube from './dijiclue/Digiclube';
 import Footer from './Footer';
-
+import Headers from './headers/Headers';
 function App() {
   const [state, setState] = useState('kiarad');
   function handelerState(event) {
@@ -20,8 +19,8 @@ function App() {
 
   return (
     <>
-    
-      <Header />
+      <Headers />
+
       <p>{state}</p>
       <Story />
 
@@ -49,7 +48,7 @@ function App() {
       <div className='p-6'>
         <hr></hr>
         <Footer />
-        <input type='text' value={state} onChange={(event) => handelerState(event)} />
+        {/* <input type='text' value={state} onChange={(event) => handelerState(event)} /> */}
       </div>
     </>
   );
