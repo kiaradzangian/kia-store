@@ -7,12 +7,13 @@ export default function Headers() {
         <div class='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 '>
           <a href='https://flowbite.com' class='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
+              className='p-4'
               src='https://www.digikala.com/statics/img/svg/logo.svg'
               class='h-6'
               alt='Flowbite Logo'
             />
 
-            <form>
+            <form className='m-4'>
               <label
                 for='search'
                 class='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'
