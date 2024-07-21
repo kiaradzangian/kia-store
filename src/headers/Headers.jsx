@@ -48,7 +48,7 @@ export default function Headers() {
             </form>
           </a>
           <div class='flex items-center space-x-6 rtl:space-x-reverse'>
-            <button class=' text-sm  text-black border border-slate-300 px-2 py-1 rounded-lg transition duration-200 ease-in-out  active:bg-purple-900 focus:outline-none'>
+            <button class=' text-sm  text-black border border-slate-300 px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none'>
               ورود | ثبت نام
             </button>
 
