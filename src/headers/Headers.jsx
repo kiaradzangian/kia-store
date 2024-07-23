@@ -1,7 +1,7 @@
 import { Outlet, Link } from 'react-router-dom';
 const Headers = () => {
   return (
-    <div className='fixed z-10'>
+    <div className='fixed z-10 '>
       <nav className='bg-white border-gray-200 dark:bg-gray-900 '>
         <img
           className='w-full'
@@ -13,7 +13,7 @@ const Headers = () => {
           <div className='flex '>
             <Link to='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
               <img
-                className='p-4 h-16'
+                className='p-4 h-16 '
                 src='https://www.digikala.com/statics/img/svg/logo.svg'
                 alt=''
               />
@@ -45,7 +45,7 @@ const Headers = () => {
             </form>
           </div>
           <div className='flex items-center space-x-6 rtl:space-x-reverse  justify-end'>
-            <button className=' text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end'>
+            <button className='animate-bounce text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end '>
               ورود | ثبت نام
             </button>
 
@@ -62,37 +62,33 @@ const Headers = () => {
           <div className='flex items-center'>
             <ul className='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm'>
               <li>
-                <Link
-                  to='/product'
-                  className='text-gray-900 dark:text-white hover:underline '
-                  aria-current='page'
-                >
+                <Link to='/product' className='hover:opacity-30 ' aria-current='page'>
                   شگفت انگیز
                 </Link>
               </li>
               <li>
-                <a href='#' className='text-gray-900 dark:text-white hover:underline'>
+                <a href='#' className='hover:opacity-30'>
                   سوپر مارکت
                 </a>
               </li>
               <li>
-                <a href='#' className='text-gray-900 dark:text-white hover:underline'>
+                <a href='#' className='hover:opacity-30'>
                   کارت هدیه
                 </a>
               </li>
               <li>
-                <a href='#' className='text-gray-900 dark:text-white hover:underline'>
+                <a href='#' className='hover:opacity-30'>
                   تخفیف و پیشنهادات
                 </a>
               </li>
               <h1>|</h1>
               <li>
-                <a href='#' className='text-gray-900 dark:text-white hover:underline'>
+                <a href='#' className='hover:opacity-30'>
                   سوالی دارید
                 </a>
               </li>
               <li>
-                <a href='#' className='text-gray-900 dark:text-white hover:underline'>
+                <a href='#' className='hover:opacity-30'>
                   در دیجی کالا بفروشید
                 </a>
               </li>

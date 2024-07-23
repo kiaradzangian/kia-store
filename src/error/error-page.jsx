@@ -14,6 +14,12 @@ export default function ErrorPage() {
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       <p>
         <p className='flex justify-center'>صحفه ای که دنبال ان بودبد پیدا نشد</p>
         <a href='/' className='flex justify-center text-emerald-950'>

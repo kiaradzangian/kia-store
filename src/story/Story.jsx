@@ -9,9 +9,9 @@ export default function Story() {
         {' '}
         {stories.map((story) => {
           return (
-            <a href='' key={story.id}>
+            <a className=' ' href='' key={story.id}>
               <img
-                className='w-17 h-20 rounded-full ring-2 ring-purple-600 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-200 '
+                className=' w-17 h-20 rounded-full ring-2 ring-purple-600 ring-offset-2 ring-offset-slate-50 dark:ring-offset-slate-200 '
                 src={story.img}
               />
               <div className='m-2'>
