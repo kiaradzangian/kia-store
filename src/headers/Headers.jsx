@@ -1,4 +1,6 @@
-export default function Headers() {
+import React from 'react';
+
+const Headers = () => {
   return (
     <div className='shadow-xl'>
       <nav className='bg-white border-gray-200 dark:bg-gray-900  '>
@@ -40,8 +42,8 @@ export default function Headers() {
               </div>
             </form>
           </a>
-          <div className='flex items-center space-x-6 rtl:space-x-reverse'>
-            <button className=' text-sm  text-black border border-slate-300 px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none'>
+          <div className='flex items-center space-x-6 rtl:space-x-reverse  justify-end'>
+            <button className=' text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end'>
               ورود | ثبت نام
             </button>
 
@@ -98,4 +100,6 @@ export default function Headers() {
       </nav>
     </div>
   );
-}
+};
+
+export default Headers;

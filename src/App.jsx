@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import Story from './story/Story';
-import Navigation from './navigation/Navigation';
 import Image from './image/Image';
 import Cards from './cards/Cards';
 import Market from './market/Market';
@@ -12,11 +10,6 @@ import Digiclube from './dijiclue/Digiclube';
 import Footer from './Footer';
 import Headers from './headers/Headers';
 function App() {
-  const [state, setState] = useState('kiarad');
-  function handelerState(event) {
-    setState(event.currentTarget.value);
-  }
-
   return (
     <>
       <Headers />
@@ -48,7 +41,6 @@ function App() {
       <div className='p-6'>
         <hr></hr>
         <Footer />
-        {/* <input type='text' value={state} onChange={(event) => handelerState(event)} /> */}
       </div>
     </>
   );

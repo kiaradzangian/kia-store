@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Amazingcard({ amazing }) {
-  console.log(amazing);
   return (
     <div class='w-40 h-auto first:rounded-r-lg last:rounded-l-lg p-2 bg-white transform hover:scale-105 transition-transform duration-300 ease-in-out'>
       <img class='w-full  object-cover  text-sm ' alt='Card Image' src={amazing.img} />
