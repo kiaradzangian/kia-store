@@ -1,4 +1,3 @@
-import React from 'react';
 import { data as dastebandis } from '../contants/_dastebandi.json';
 export default function Dastebandi() {
   return (

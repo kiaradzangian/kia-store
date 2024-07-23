@@ -1,27 +1,29 @@
-import React from 'react';
-
+import { Outlet, Link } from 'react-router-dom';
 const Headers = () => {
   return (
-    <div className='shadow-xl'>
-      <nav className='bg-white border-gray-200 dark:bg-gray-900  '>
-        <div className='flex flex-wrap justify-between items-center  max-w-screen-xl p-2 '>
-          <a
-            href='https://flowbite.com'
-            className='flex items-center space-x-3 rtl:space-x-reverse'
-          >
-            <img
-              className='p-4 h-14'
-              src='https://www.digikala.com/statics/img/svg/logo.svg'
-              alt=''
-            />
+    <div className='fixed z-10'>
+      <nav className='bg-white border-gray-200 dark:bg-gray-900 '>
+        <img
+          className='w-full'
+          src='https://dkstatics-public.digikala.com/digikala-adservice-banners/03b08688d54afa1911722b86a42ea1ab367dc8be_1721658632.jpg?x-oss-process=image/quality,q_95/format,webp'
+          alt=''
+        />
+
+        <div className='flex flex-wrap justify-between items-center  max-w-screen-xl  '>
+          <div className='flex '>
+            <Link to='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
+              <img
+                className='p-4 h-16'
+                src='https://www.digikala.com/statics/img/svg/logo.svg'
+                alt=''
+              />
+            </Link>
 
             <form className='m-4'>
               <label
                 form='search'
-                className='mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white'
-              >
-                Search
-              </label>
+                className='mb-2 text-sm font-medium text-gray-200 sr-only dark:text-white'
+              ></label>
               <div className='relative'>
                 <div className='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'>
                   <svg
@@ -41,7 +43,7 @@ const Headers = () => {
                 />
               </div>
             </form>
-          </a>
+          </div>
           <div className='flex items-center space-x-6 rtl:space-x-reverse  justify-end'>
             <button className=' text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end'>
               ورود | ثبت نام
@@ -55,18 +57,18 @@ const Headers = () => {
           </div>
         </div>
       </nav>
-      <nav className='bg-gray-50 dark:bg-gray-700'>
+      <nav className='bg-white'>
         <div className='max-w-screen-xl px-4 py-3 mx-auto'>
           <div className='flex items-center'>
             <ul className='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm'>
               <li>
-                <a
-                  href='/product'
+                <Link
+                  to='/product'
                   className='text-gray-900 dark:text-white hover:underline '
                   aria-current='page'
                 >
                   شگفت انگیز
-                </a>
+                </Link>
               </li>
               <li>
                 <a href='#' className='text-gray-900 dark:text-white hover:underline'>
@@ -97,7 +99,8 @@ const Headers = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav>{' '}
+      <hr></hr>
     </div>
   );
 };

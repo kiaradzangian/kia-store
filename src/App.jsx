@@ -13,8 +13,15 @@ function App() {
   return (
     <>
       <Headers />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 
-      {/* <p>{state}</p> */}
+      {/* <p>{tate}</p> */}
       <Story />
 
       {/* <Navigation /> */}
