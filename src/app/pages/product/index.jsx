@@ -13,7 +13,7 @@ const Product = () => {
       </div>
       <img
         className='w-full h-80'
-        src='https://dkstatics-public.digikala.com/digikala-adservice-banners/610b26073fd79d6d3b365abb5de3aa671d41d4df_1721725973.jpg?x-oss-process=image/quality,q_95/format,webp'
+        src='https://dkstatics-public.digikala.com/digikala-adservice-banners/9fb15c184b09d3e4ad3459a313ee9201bef99d19_1721807356.jpg?x-oss-process=image/quality,q_95/format,webp'
         alt=''
       />
       <div className=' bg-rose-500 h-80 p-3 m-5 rounded-3xl'>
