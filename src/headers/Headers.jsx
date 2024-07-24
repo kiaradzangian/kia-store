@@ -45,7 +45,7 @@ const Headers = () => {
             </form>
           </div>
           <div className='flex items-center space-x-6 rtl:space-x-reverse  justify-end'>
-            <button className='animate-bounce text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end '>
+            <button className=' text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end '>
               ورود | ثبت نام
             </button>
 

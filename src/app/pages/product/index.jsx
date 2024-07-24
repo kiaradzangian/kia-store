@@ -1,14 +1,29 @@
 import Headers from '../../../headers/Headers';
-
+import Shegeftangizcard from '../../../shegeftangiz/Shegeftangizcard';
 const Product = () => {
   return (
     <div>
       <Headers />
+      <br></br> <br></br> <br></br> <br></br> <br></br>
+      <br></br> <br></br>
+      <div className='flex justify-center bg-red-500 h-16 '>
+        <h1 className='p-4 font-sans hover:font-serif text-2xl text-center font-bold text-white'>
+          پیشنهاد شگفت انگیز
+        </h1>
+      </div>
       <img
-        className='w-full h-96 '
-        src='https://dkstatics-public.digikala.com/digikala-adservice-banners/cbaf12622ec38c4335647fa0598d6d5a9b9beef8_1721564024.jpg?x-oss-process=image/quality,q_95/format,webp'
+        className='w-full h-80'
+        src='https://dkstatics-public.digikala.com/digikala-adservice-banners/610b26073fd79d6d3b365abb5de3aa671d41d4df_1721725973.jpg?x-oss-process=image/quality,q_95/format,webp'
         alt=''
       />
+      <div className=' bg-rose-500 h-80 p-3 m-5 rounded-3xl'>
+        <div className=''></div>
+        <h1 className='font-sans  text-lg text-center font-bold text-white text-right'>
+          🎇شگفت انگیز روز
+        </h1>
+        <br></br>
+        <Shegeftangizcard />
+      </div>
     </div>
   );
 };
