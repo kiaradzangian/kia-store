@@ -1,4 +1,5 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 const Headers = () => {
   return (
     <div className='fixed z-10 '>
@@ -67,9 +68,13 @@ const Headers = () => {
                 </Link>
               </li>
               <li>
-                <a href='#' className='hover:opacity-30 font-bold'>
+                <Link
+                  to='/Marketheader'
+                  className='hover:opacity-30 font-bold '
+                  aria-current='page'
+                >
                   سوپر مارکت
-                </a>
+                </Link>
               </li>
               <li>
                 <a href='#' className='hover:opacity-30 font-bold'>

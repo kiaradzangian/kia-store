@@ -1,4 +1,3 @@
-import React from 'react';
 import { data as amazinglist } from '../contants/_amazingcard.json';
 import Amazingcard from '../components/Amazingcard';
 export default function Cards() {
