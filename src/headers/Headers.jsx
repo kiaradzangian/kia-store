@@ -62,33 +62,33 @@ const Headers = () => {
           <div className='flex items-center'>
             <ul className='flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm'>
               <li>
-                <Link to='/product' className='hover:opacity-30 ' aria-current='page'>
+                <Link to='/product' className='hover:opacity-30 font-bold ' aria-current='page'>
                   شگفت انگیز
                 </Link>
               </li>
               <li>
-                <a href='#' className='hover:opacity-30'>
+                <a href='#' className='hover:opacity-30 font-bold'>
                   سوپر مارکت
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:opacity-30'>
+                <a href='#' className='hover:opacity-30 font-bold'>
                   کارت هدیه
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:opacity-30'>
+                <a href='#' className='hover:opacity-30 font-bold'>
                   تخفیف و پیشنهادات
                 </a>
               </li>
               <h1>|</h1>
               <li>
-                <a href='#' className='hover:opacity-30'>
+                <a href='#' className='hover:opacity-30 font-bold'>
                   سوالی دارید
                 </a>
               </li>
               <li>
-                <a href='#' className='hover:opacity-30'>
+                <a href='#' className='hover:opacity-30 font-bold'>
                   در دیجی کالا بفروشید
                 </a>
               </li>
