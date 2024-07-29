@@ -9,11 +9,9 @@ import Towpicture from './mahbob/Towpicture';
 import Digiclube from './dijiclue/Digiclube';
 import Footer from './Footer';
 import Headers from './headers/Headers';
-import Marketheader from './supernavbar/Marketheader';
 function App() {
   return (
     <>
-      <Marketheader />
       <Headers />
       <br></br>
       <br></br>

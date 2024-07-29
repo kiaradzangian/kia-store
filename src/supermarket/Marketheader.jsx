@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Marketheader from '../supermarket/Marketheader';
-const Headers = () => {
+
+const Marketheader = () => {
   return (
     <div className='fixed z-10 '>
       <nav className='bg-white border-gray-200 dark:bg-gray-900 '>
@@ -106,4 +106,4 @@ const Headers = () => {
   );
 };
 
-export default Headers;
+export default Marketheader;
