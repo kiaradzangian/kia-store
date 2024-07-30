@@ -3,6 +3,7 @@ import App from '../App.jsx';
 import ErrorPage from '../error/error-page';
 
 import Product from '../app/pages/product/index.jsx';
+import Supermarket from '../headers/supermarket/Supermarket.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -10,8 +11,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: '/product',
+    path: '/product/',
     element: <Product />,
+    children: [],
+  },
+  {
+    path: '/Supermarket/',
+    element: <Supermarket />,
+    children: [],
   },
 ]);
 

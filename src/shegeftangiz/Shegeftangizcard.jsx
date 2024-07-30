@@ -1,5 +1,4 @@
 import Dastebandi from '../dastebandishegeftangiz/Dastebandi';
-
 export default function Shegeftangizcard() {
   return (
     <div>
