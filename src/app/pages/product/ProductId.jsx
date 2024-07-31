@@ -1,10 +1,7 @@
-import Headers from '../../../headers/Headers';
-import Footer from '../../../Footer';
 const ProductId = () => {
   return (
     <div>
-      <Headers />
-      <Footer />
+      <h1>hi</h1>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom';
 import Headers from '../../../headers/Headers';
 import Shegeftangizcard from '../../../shegeftangiz/Shegeftangizcard';
 const Product = () => {
@@ -7,7 +8,7 @@ const Product = () => {
       <br></br> <br></br> <br></br> <br></br> <br></br>
       <br></br> <br></br>
       <div className='flex justify-center bg-red-500 h-16 '>
-        <h1 className='p-4 font-sans hover:font-mono   text-2xl text-center font-bold text-white'>
+        <h1 className='p-4 font-sans hover:font-mono text-2xl text-center font-bold text-white'>
           پیشنهاد شگفت انگیز
         </h1>
       </div>
@@ -23,6 +24,7 @@ const Product = () => {
         </h1>
         <br></br>
         <Shegeftangizcard />
+        <Outlet />
       </div>
     </div>
   );
