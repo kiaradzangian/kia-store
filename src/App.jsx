@@ -48,8 +48,7 @@ function App() {
       <Digiclube />
 
       <div className='p-6'>
-        <hr></hr>
-        <Footer />
+        <hr></hr> <Footer />
       </div>
     </>
   );

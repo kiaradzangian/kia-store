@@ -38,6 +38,8 @@
   src: url(./assets/fonts/vazir/Vazirmatn-Regular.ttf);
 }
 
-*{
+* {
   font-family: myFirstFont;
 }
+
+

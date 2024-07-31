@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function DiscountIcon({ discount }) {
-  console.log(discount);
   return (
     <div className='relative'>
       <img className='w-20 h-20 rounded-full' src={discount.img} alt='' />
