@@ -20,6 +20,11 @@ const router = createBrowserRouter([
     element: <Supermarket />,
     children: [],
   },
+  {
+    path: '/Supermarket/',
+    element: <Supermarket />,
+    children: [],
+  },
 ]);
 
 const Routers = () => {
