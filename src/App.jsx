@@ -11,6 +11,7 @@ import Footer from './Footer';
 import Headers from './headers/Headers';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Outlet } from 'react-router-dom';
 function App() {
   return (
     <>
@@ -46,7 +47,6 @@ function App() {
       <Mahbob />
       <Towpicture />
       <Digiclube />
-
       <div className='p-6'>
         <hr></hr> <Footer />
       </div>

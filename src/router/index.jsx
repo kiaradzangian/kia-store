@@ -5,19 +5,31 @@ import ErrorPage from '../error/error-page';
 import Product from '../app/pages/product/index.jsx';
 import Supermarket from '../headers/supermarket/Supermarket.jsx';
 import ProductId from '../app/pages/product/ProductId.jsx';
+import Layout from '../layout';
+import MainProduct from '../app/pages/product/MainProduct.jsx';
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App />,
+    path: '',
+    element: <Layout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: '/product/',
-    element: <Product />,
     children: [
       {
-        path: ':productId',
-        element: <ProductId />,
+        path: '/',
+        element: <App />,
+      },
+      {
+        path: 'product',
+        element: <Product />,
+        children: [
+          {
+            path: '',
+            element: <MainProduct />,
+          },
+          {
+            path: ':productId',
+            element: <ProductId />,
+          },
+        ],
       },
     ],
   },

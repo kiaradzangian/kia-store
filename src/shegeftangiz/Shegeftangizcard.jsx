@@ -6,7 +6,7 @@ export default function Shegeftangizcard() {
     <div>
       <div className='flex justify-right gap-4'>
         <Link rel='stylesheet' to={'/product/gp-12345'}>
-          <div className='hover:opacity-75  w-1/3 h-60 flex flex-col justify-center gap-2 bg-white rounded-lg shadow p-2'>
+          <div className='hover:opacity-75  w-full h-60 flex flex-col justify-center gap-2 bg-white rounded-lg shadow p-2'>
             <div className='flex gap-2 '>
               <img
                 src='https://dkstatics-public.digikala.com/digikala-products/dfc0e25d60551cf78f9817c8c6490b1612a4256f_1707908038.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90'
