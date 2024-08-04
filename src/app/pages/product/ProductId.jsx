@@ -1,6 +1,21 @@
 import Article from './Article';
 
 const ProductId = () => {
+  function handelAddToCart() {
+    async function getData() {
+      const url = 'http://localhost:3000';
+      try {
+        const response = await fetch(url);
+        console.log(response);
+
+        const json = await response.json();
+        console.log(json);
+      } catch (error) {
+        console.error(error.message);
+      }
+    }
+    getData();
+  }
   return (
     <div>
       <br></br>
@@ -177,6 +192,7 @@ const ProductId = () => {
             </div>
             <br></br>
             <button
+              onClick={handelAddToCart}
               type='button'
               class=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
