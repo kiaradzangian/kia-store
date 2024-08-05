@@ -1,5 +1,5 @@
 import Article from './Article';
-
+import Footer from '../../../Footer';
 const ProductId = () => {
   function handelAddToCart() {
     async function getData() {
@@ -156,8 +156,6 @@ const ProductId = () => {
               </article>
             </div>
           </a>
-
-          {/* منطقه نوشتن کارت */}
         </div>
 
         <div className='w-1/4 bg-[#f7f7f4] text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md'>
@@ -244,12 +242,12 @@ const ProductId = () => {
           </div>
         </div>
       </div>
+
       <Article />
       <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className='p-4 m-3'>
+        <Footer />
+      </div>
     </div>
   );
 };
