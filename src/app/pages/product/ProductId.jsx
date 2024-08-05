@@ -160,8 +160,8 @@ const ProductId = () => {
           {/* منطقه نوشتن کارت */}
         </div>
 
-        <div class='w-1/4 bg-[#f7f7f4] text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md'>
-          <div class='col-span-2 text-lg font-bold rounded-md'>
+        <div className='w-1/4 bg-[#f7f7f4] text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md'>
+          <div className='col-span-2 text-lg font-bold rounded-md'>
             {' '}
             <p>فروشنده</p>
             <div className='flex justify-start  '>
@@ -194,7 +194,7 @@ const ProductId = () => {
             <button
               onClick={handelAddToCart}
               type='button'
-              class=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
+              className=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
               افزودن به سبد
             </button>
@@ -235,6 +235,11 @@ const ProductId = () => {
             <br></br>
             <div className='flex justify-between'>
               <p className='text-sm font-bold'>فرایند قیمت گذاری و نظارت بر قیمت</p>
+              <img
+                className='w-6'
+                src='https://www.reshot.com/preview-assets/icons/XY6MSRE5DN/chevron-arrow-left-circle-XY6MSRE5DN.svg'
+                alt=''
+              />
             </div>
           </div>
         </div>

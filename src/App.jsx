@@ -9,7 +9,7 @@ import Towpicture from './mahbob/Towpicture';
 import Digiclube from './dijiclue/Digiclube';
 import Footer from './Footer';
 import Headers from './headers/Headers';
-import { Outlet } from 'react-router-dom';
+
 function App() {
   return (
     <>
