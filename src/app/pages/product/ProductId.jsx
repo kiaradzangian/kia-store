@@ -1,31 +1,27 @@
 import Article from './Article';
 import Footer from '../../../Footer';
-const ProductId = () => {
-  function handelAddToCart() {
-    async function getData() {
-      const url = 'http://localhost:3000';
-      try {
-        const response = await fetch(url);
-        console.log(response);
+import { useEffect, useState } from 'react';
 
-        const json = await response.json();
-        console.log(json);
-      } catch (error) {
-        console.error(error.message);
-      }
+const ProductId = () => {
+  const [data, setData] = useState();
+  async function getData() {
+    const url = 'http://localhost:3000';
+    try {
+      const response = await fetch(url);
+
+      const json = await response.json();
+      setData(json);
+    } catch (error) {
+      console.error(error.message);
     }
-    getData();
   }
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <div className='flex justify-between'>
+      <div className='flex justify-between pt-40'>
         <div className='flex justify-start'>
           <div className='flex justify-end'>
             <div className='flex justify-end'>
@@ -161,13 +157,13 @@ const ProductId = () => {
         <div className='w-1/4 bg-[#f7f7f4] text-slate-600 border border-slate-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md'>
           <div className='col-span-2 text-lg font-bold rounded-md'>
             {' '}
-            <p>فروشنده</p>
+            <p>{data?.customer}</p>
             <div className='flex justify-start  '>
               <img className='w-4' src='https://www.svgrepo.com/show/290119/smile.svg' alt='' />
-              <p className='p-2 font-light text-sm'>دیجی کالا</p>
+              <p className='p-2 font-light text-sm'>{data?.digi}</p>
             </div>
             <div className='flex justify-center gap-2 border-b-2 border-slate-300 p-2'>
-              <p className='font-light text-sm text-emerald-800'>93.4</p>
+              <p className='font-light text-sm text-emerald-800'>{data?.Percent}</p>
 
               <p className='font-light text-sm '>رضایت از کالا|عمرکرد عالی</p>
             </div>
@@ -186,11 +182,10 @@ const ProductId = () => {
                 src='https://dkstatics-public.digikala.com/digikala-static/b0d6bb54a0077253781cdce04f9e16a34edc5299_1716833794.svg'
                 alt=''
               />
-              <p className='font-bold text-sm text-teal-600'>در سبد خرید 500 نفر</p>
+              <p className='font-bold text-sm text-teal-600'>{data?.cart}</p>
             </div>
             <br></br>
             <button
-              onClick={handelAddToCart}
               type='button'
               className=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
@@ -228,7 +223,7 @@ const ProductId = () => {
                 src='https://www.digikala.com/statics/img/svg/club-point.svg'
                 alt=''
               />
-              <p className='text-sm font-bold'>۱۵۰ امتیاز دیجی‌کلاب</p>
+              <p className='text-sm font-bold'>{data?.digiclub} امتیاز دیجی‌کلاب</p>
             </div>
             <br></br>
             <div className='flex justify-between'>
@@ -244,7 +239,7 @@ const ProductId = () => {
       </div>
 
       <Article />
-      <br></br>
+
       <div className='p-4 m-3'>
         <Footer />
       </div>
