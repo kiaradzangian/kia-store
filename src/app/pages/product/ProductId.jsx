@@ -135,8 +135,8 @@ const ProductId = () => {
             <br></br>
 
             <br></br>
-            <div className='flex justify-start gap-4'>
-              <Article feature={data?.features} />
+            <div className=' gap-4'>
+              {data?.features.length > 0 && <Article features={data?.features} />}
             </div>
           </a>
         </div>
