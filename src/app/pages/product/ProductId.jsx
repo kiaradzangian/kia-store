@@ -21,11 +21,12 @@ const ProductId = () => {
 
   return (
     <div>
+      <br></br>
       <div className='flex justify-between pt-40'>
         <div className='flex justify-start'>
           <div className='flex justify-end'>
-            <div className='flex justify-end'>
-              <p className=' p-3 opacity-50 font-light text-sm'>دیجیکالا</p>
+            <div className='flex justify-end '>
+              <p className=' p-3 opacity-50 font-light text-sm '>دیجیکالا</p>
               <img
                 className='w-4 m-1 '
                 src='https://www.svgrepo.com/show/171081/store.svg'
@@ -66,7 +67,6 @@ const ProductId = () => {
         </div>
       </div>
       <br></br>
-
       <div className='flex justify-start h-3/4'>
         <div className='flex justify-start w-96 h-80 m-12'>
           <img
@@ -110,32 +110,36 @@ const ProductId = () => {
             <fieldset>
               <legend className='sr-only'></legend>
 
-              <div className='space-y-2'>
-                <label className='flex cursor-pointer items-start gap-4 rounded-lg border border-gray-100 p-4 transition hover:bg-gray-50 has-[:checked]:bg-blue-50'>
-                  <div className='flex items-center'>
-                    <input
-                      id='Option1'
-                      className='size-4 rounded border-gray-300'
-                      type='checkbox'
-                    />
-                  </div>
-
-                  <div>
-                    <strong className='font-medium text-gray-900'>{data?.bime.label}</strong>ِ
-                    <p className='mt-1 text-pretty text-sm text-gray-700'>
-                      <div className='flex justify-around'>
-                        <p className='opacity-75'>{data?.bime.price}</p>
-                        <p className='text-fuchsia-950'>{data?.bime.text}</p>
-                      </div>
-                    </p>
-                  </div>
-                </label>
-              </div>
+              {data?.bime?.status && (
+                <div className='space-y-2'>
+                  <label className='flex cursor-pointer items-start gap-4 rounded-lg border border-gray-100 p-4 transition hover:bg-gray-50 has-[:checked]:bg-blue-50'>
+                    <div className='flex items-center'>
+                      <input
+                        id='Option1'
+                        className='size-4 rounded border-gray-300'
+                        type='checkbox'
+                      />
+                    </div>
+                    <div>
+                      <strong className='font-medium text-gray-900'>
+                        {data?.bime.detail.label}
+                      </strong>
+                      ِ
+                      <p className='mt-1 text-pretty text-sm text-gray-700'>
+                        <div className='flex justify-around'>
+                          <p className='opacity-75'>{data?.bime.detail.price}</p>
+                          <p className='text-fuchsia-950'>{data?.bime.detail.text}</p>
+                        </div>
+                      </p>
+                    </div>
+                  </label>
+                </div>
+              )}
             </fieldset>
             <br></br>
 
             <br></br>
-            <div className=' gap-4'>
+            <div className=''>
               {data?.features.length > 0 && <Article features={data?.features} />}
             </div>
           </a>
@@ -224,7 +228,6 @@ const ProductId = () => {
           </div>
         </div>
       </div>
-
       <div className='p-4 m-3'>
         <Footer />
       </div>

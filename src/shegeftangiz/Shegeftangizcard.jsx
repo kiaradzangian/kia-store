@@ -57,6 +57,8 @@ export default function Shegeftangizcard() {
       <br></br>
       <br />
       <Dastebandi />
+      <br />
+      <br />
     </div>
   );
 }
