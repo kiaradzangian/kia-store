@@ -77,24 +77,21 @@ const ProductId = () => {
         </div>
         <div className='p-6 flex justify-end '>
           <a href=''>
-            <p className='opacity-50 font-light text-sky-800'>تکنو/ گوشی موبایل تکنو</p>
-            <h1 className='text-2xl '>گوشی موبایل تکنو مدل vflip ظرفیت 256 و رم 8</h1>
-            <h6 className='opacity-50 text-sm font-light text-sky-800 m-3'>
-              {' '}
-              Tecno Phantom V Flip 256GB And 8GB RAM Mobile Phone
-            </h6>
+            <p className='opacity-50 font-light text-sky-800'>{data?.title}</p>
+            <h1 className='text-2xl '>{data?.name}</h1>
+            <h6 className='opacity-50 text-sm font-light text-sky-800 m-3'> {data?.Paragraph}</h6>
             <div className='flex justify-start gap-2'>
               <img className='w-3' src='https://www.svgrepo.com/show/13695/star.svg' alt='' />
 
-              <p className='text-sm'>3.7</p>
-              <p className='text-sm'>(امتیاز ۹ خریدار)</p>
+              <p className='text-sm'>{data?.Score}</p>
+              <p className='text-sm'>{data?.emtiaz}</p>
               <br></br>
-              <p className='text-sm text-sky-800'>28 دیدگاه .</p>
+              <p className='text-sm text-sky-800'>{data?.didgah}</p>
               <br></br>
-              <p className='text-sm text-sky-800'>26 پرسش.</p>
+              <p className='text-sm text-sky-800'>{data?.porsesh}</p>
             </div>
             <br></br>
-            <h1 className='font-bold'>رنگ:مشکی</h1>
+            <h1 className='font-bold'>{data?.rang}</h1>
             <div className='flex justify-start gap-3 p-2 '>
               <img
                 className=' outline outline-1 outline-offset-1 w-7 rounded-full '
@@ -108,7 +105,7 @@ const ProductId = () => {
               />
             </div>
             <br></br>
-            <h1 className='font-bold'>بیمه</h1>
+            <h1 className='font-bold'></h1>
             <br></br>
             <fieldset>
               <legend className='sr-only'></legend>
@@ -124,14 +121,11 @@ const ProductId = () => {
                   </div>
 
                   <div>
-                    <strong className='font-medium text-gray-900'>
-                      بیمه تجهیزات دیجیتال - بیمه پارسیان و رساندن خدمات
-                    </strong>
-                    ِ
+                    <strong className='font-medium text-gray-900'>{data?.bime.label}</strong>ِ
                     <p className='mt-1 text-pretty text-sm text-gray-700'>
                       <div className='flex justify-around'>
-                        <p className='opacity-75'>تومان467/000</p>
-                        <p className='text-fuchsia-950'>جزییات</p>
+                        <p className='opacity-75'>{data?.bime.price}</p>
+                        <p className='text-fuchsia-950'>{data?.bime.text}</p>
                       </div>
                     </p>
                   </div>
@@ -142,14 +136,7 @@ const ProductId = () => {
 
             <br></br>
             <div className='flex justify-start gap-4'>
-              <article className='w-40 h-16 bg-zinc-100 shadow p-2 space-y-1 rounded-md hover:-translate-y-2 duration-300'>
-                <h1 className='text-sm'>فناوری صفحه نمایش</h1>
-                <p className='text-sm w-full text-gray-400'>Foldable LTPO </p>
-              </article>
-              <article className='w-40 h-16 bg-zinc-100 shadow p-2 space-y-1 rounded-md hover:-translate-y-2 duration-300'>
-                <h1 className='text-sm'> اندازه</h1>
-                <p className='text-sm w-full text-gray-400'> 6.9 </p>
-              </article>
+              <Article feature={data?.features} />
             </div>
           </a>
         </div>
@@ -165,11 +152,11 @@ const ProductId = () => {
             <div className='flex justify-center gap-2 border-b-2 border-slate-300 p-2'>
               <p className='font-light text-sm text-emerald-800'>{data?.Percent}</p>
 
-              <p className='font-light text-sm '>رضایت از کالا|عمرکرد عالی</p>
+              <p className='font-light text-sm '>{data?.Satisfaction}</p>
             </div>
             <br></br>
             <div className='flex justify-end'>
-              <p className='flex justify-end text-sm font-bold gap-1'>29,799,000</p>
+              <p className='flex justify-end text-sm font-bold gap-1'>{data?.price}</p>
               <img
                 className='w-4 h-4'
                 src='https://cdn.iconscout.com/icon/premium/png-256-thumb/toman-8688012-7145210.png?f=webp&w=256'
@@ -189,7 +176,7 @@ const ProductId = () => {
               type='button'
               className=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
-              افزودن به سبد
+              {data?.buttontext}
             </button>
             <br></br>
             <br></br>
@@ -200,7 +187,7 @@ const ProductId = () => {
                 src='https://static.thenounproject.com/png/2084849-200.png'
                 alt=''
               />
-              <p className='text-sm'>گارانتی ۱۸ ماهه مدیا پردازش</p>
+              <p className='text-sm'> {data?.garanti}</p>
             </div>
             <br></br>
             <div className='flex justify-start  '>
@@ -209,11 +196,11 @@ const ProductId = () => {
                 src='https://www.svgrepo.com/show/22694/delivery-truck.svg'
                 alt=''
               />
-              <p className='text-sm font-bold'>ارسال دیجی کالا</p>
+              <p className='text-sm font-bold'>{data?.ersal.text}</p>
             </div>
             <div className='flex justify-start  border-b-2 '>
               <img className='w-4' src='https://www.svgrepo.com/show/130076/watch.svg' alt='' />
-              <p className='text-sm font-bold'>ارسال امروز (فعلا در شهر تهران و کرج)</p>
+              <p className='text-sm font-bold'>{data?.ersal.label}</p>
               <br></br>
             </div>
             <br></br>
@@ -227,7 +214,7 @@ const ProductId = () => {
             </div>
             <br></br>
             <div className='flex justify-between'>
-              <p className='text-sm font-bold'>فرایند قیمت گذاری و نظارت بر قیمت</p>
+              <p className='text-sm font-bold'>{data?.howtoprice}</p>
               <img
                 className='w-6'
                 src='https://www.reshot.com/preview-assets/icons/XY6MSRE5DN/chevron-arrow-left-circle-XY6MSRE5DN.svg'
@@ -237,8 +224,6 @@ const ProductId = () => {
           </div>
         </div>
       </div>
-
-      <Article />
 
       <div className='p-4 m-3'>
         <Footer />
