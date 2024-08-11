@@ -1,9 +1,11 @@
 import Article from './Article';
 import Footer from '../../../Footer';
 import { useEffect, useState } from 'react';
+import { useStore } from '../../../store';
 
 const ProductId = () => {
   const [data, setData] = useState();
+  const increasePopulation = useStore((state) => state.increasePopulation);
   async function getData() {
     const url = 'http://localhost:3000';
     try {
@@ -26,12 +28,14 @@ const ProductId = () => {
         <div className='flex justify-start'>
           <div className='flex justify-end'>
             <div className='flex justify-end '>
-              <p className=' p-3 opacity-50 font-light text-sm '>دیجیکالا</p>
-              <img
-                className='w-4 m-1 '
-                src='https://www.svgrepo.com/show/171081/store.svg'
-                alt=''
-              />
+              <div className='flex justify-end '>
+                <p className=' p-3 opacity-50 font-light text-sm '>دیجیکالا</p>
+                <img
+                  className='w-4 m-1 '
+                  src='https://www.svgrepo.com/show/171081/store.svg'
+                  alt=''
+                />
+              </div>
             </div>
             <div className='flex justify-end'>
               <p className=' p-3 opacity-50 font-light text-sm'>موبایل</p>
@@ -75,6 +79,7 @@ const ProductId = () => {
             alt=''
           />
         </div>
+
         <div className='p-6 flex justify-end '>
           <a href=''>
             <p className='opacity-50 font-light text-sky-800'>{data?.title}</p>
@@ -91,6 +96,7 @@ const ProductId = () => {
               <p className='text-sm text-sky-800'>{data?.porsesh}</p>
             </div>
             <br></br>
+
             <h1 className='font-bold'>{data?.rang}</h1>
             <div className='flex justify-start gap-3 p-2 '>
               <img
@@ -178,6 +184,7 @@ const ProductId = () => {
             <br></br>
             <button
               type='button'
+              onClick={increasePopulation}
               className=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
               {data?.buttontext}
