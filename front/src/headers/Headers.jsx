@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useStore } from '../store';
 const Headers = () => {
   const bears = useStore((state) => state.bears);
+  const product = useStore((state) => state.product);
+  console.log(product[0]);
   return (
     <div className='fixed z-10 '>
       <nav className='bg-white border-gray-200 dark:bg-gray-900 '>
@@ -50,12 +52,23 @@ const Headers = () => {
             <button className=' text-sm  text-black border px-2 py-1 rounded-lg transition duration-200 ease-in-out focus:outline-none justify-end '>
               ورود | ثبت نام
             </button>
-            <h1>{bears}</h1>
-            <img
-              className='w-10'
-              src='https://freepek.ir/wp-content/uploads/2022/11/shopping-cart.gif'
-              alt=''
-            />
+
+            <Link to='/Cart' className='hover:opacity-40 font-bold ' aria-current='page'>
+              <div className='flex justify-end'>
+                {' '}
+                <div className='gap-2'>
+                  <h1 className='inline-flex absolute bottom-23  left-30 items-center justify-center w-5 h-5 ms-4 text-xs font-semibold text-white bg-red-400 rounded-full'>
+                    {bears}
+                  </h1>
+
+                  <img
+                    className='w-10 '
+                    src='https://freepek.ir/wp-content/uploads/2022/11/shopping-cart.gif'
+                    alt=''
+                  />
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Dastebandi from '../dastebandishegeftangiz/Dastebandi';
+// import Dastebandi from '../dastebandishegeftangiz/Dastebandi';
 
 export default function Shegeftangizcard() {
   return (
@@ -56,7 +56,7 @@ export default function Shegeftangizcard() {
       </div>{' '}
       <br></br>
       <br />
-      <Dastebandi />
+      {/* <Dastebandi /> */}
       <br />
     </div>
   );

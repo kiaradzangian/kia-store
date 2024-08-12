@@ -6,6 +6,7 @@ import { useStore } from '../../../store';
 const ProductId = () => {
   const [data, setData] = useState();
   const increasePopulation = useStore((state) => state.increasePopulation);
+  const addProductToCart = useStore((state) => state.addProductToCart);
   async function getData() {
     const url = 'http://localhost:3000';
     try {
@@ -20,7 +21,10 @@ const ProductId = () => {
   useEffect(() => {
     getData();
   }, []);
-
+  function addProductCart() {
+    increasePopulation();
+    addProductToCart(data);
+  }
   return (
     <div>
       <br></br>
@@ -166,7 +170,9 @@ const ProductId = () => {
             </div>
             <br></br>
             <div className='flex justify-end'>
-              <p className='flex justify-end text-sm font-bold gap-1'>{data?.price}</p>
+              <p className='flex justify-end text-sm font-bold gap-1'>
+                {Number(data?.price).toLocaleString('en')}
+              </p>
               <img
                 className='w-4 h-4'
                 src='https://cdn.iconscout.com/icon/premium/png-256-thumb/toman-8688012-7145210.png?f=webp&w=256'
@@ -184,7 +190,7 @@ const ProductId = () => {
             <br></br>
             <button
               type='button'
-              onClick={increasePopulation}
+              onClick={() => addProductCart()}
               className=' w-72 focus:outline-none text-white bg-rose-500 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900'
             >
               {data?.buttontext}

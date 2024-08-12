@@ -1,4 +1,3 @@
-import React from 'react';
 import Shegeftangizcard from '../../../shegeftangiz/Shegeftangizcard';
 
 const MainProduct = () => {
@@ -24,9 +23,7 @@ const MainProduct = () => {
       />
       <div className=' bg-rose-500 h-80 p-3 m-5 rounded-3xl'>
         <div className=''></div>
-        <h1 className='font-sans  text-lg text-center font-bold text-white text-right'>
-          🎇شگفت انگیز روز
-        </h1>
+        <h1 className='font-sans  text-lg  font-bold text-white text-right'>🎇شگفت انگیز روز</h1>
         <br></br>
         <Shegeftangizcard />
       </div>
