@@ -16,7 +16,7 @@ export default function Cart() {
       <Headers />
 
       <div className='flex justify-start gap-3 px-8 w-1/2 '>
-        <div className='flex justify-start gap-1 border-b-4 w-18 border-red-700 rounded-md p-2 mt-48 '>
+        <div className='flex justify-start gap-1 border-b-4 w-18 border-red-700 rounded-md p-2   mt-48 '>
           <b>
             {' '}
             <a href=''>
@@ -30,6 +30,11 @@ export default function Cart() {
         </div>
 
         <br></br>
+
+        <br></br>
+
+        <br></br>
+
         <a href=''>
           <p className='font-bold text-base text-[#94a3b8] p-2'>خرید بعدی</p>
         </a>
@@ -37,43 +42,66 @@ export default function Cart() {
 
       <hr className='max-w-full t h-0.5 bg-gray-200 border-0 rounded  dark:bg-gray-700'></hr>
       <br></br>
-
-      <div className='flex justify-between'>
-        <div className='border border-neutral-300 rounded-2xl w-4/6'>
-          <div className='flex justify-start gap-3 p-6  '>
-            {' '}
-            <img
-              className='w-7'
-              src='https://cdn.iconscout.com/icon/premium/png-256-thumb/green-bucket-7893293-6424097.png?f=webp&w=256'
-              alt=''
-            />
-            <p className='text-lg font-bold '>خرید سوپر مارکتی اینحاست !</p>
+      <div className='grid grid-flow-col justify-stretch'>
+        <div className='flex justify-between '>
+          <div
+            className='border border-neutral-300 rounded-2xl 
+          '
+          >
+            <div className='flex justify-start gap-3 p-6 w-full '>
+              {' '}
+              <img
+                className='w-7'
+                src='https://cdn.iconscout.com/icon/premium/png-256-thumb/green-bucket-7893293-6424097.png?f=webp&w=256'
+                alt=''
+              />
+              <p className='text-lg  '>
+                خدمات ویژه با اشتراک دیجی‌پلاس ۴ ارسال رایگان ماهانه + ۲ ارسال رایگان بیشتر، ویژه
+                سوپرمارکت پشت بهداشتی
+              </p>
+            </div>
+            <div className='flex justify-end'>
+              <img
+                className='w-14 h-14'
+                src='https://dkstatics-public.digikala.com/digikala-products/dfc0e25d60551cf78f9817c8c6490b1612a4256f_1707908038.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90'
+                alt=''
+              />
+              <button className=' p-41 m-4 bg-transparent hover:bg-green-700 text-green-700 font-bold text-xs hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded'>
+                سبد سوپر مارکتی
+              </button>
+            </div>
           </div>
-          <div className='flex justify-end'>
-            <img
-              className='w-14 h-14'
-              src='https://dkstatics-public.digikala.com/digikala-products/dfc0e25d60551cf78f9817c8c6490b1612a4256f_1707908038.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/format,webp/quality,q_90'
-              alt=''
-            />
-            <button className=' p-4 m-4 bg-transparent hover:bg-green-700 text-green-700 font-bold text-xs hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded'>
-              سبد سوپر مارکتی
-            </button>
-          </div>
-        </div>
-        <div className='m-8'>
-          <div className='border border-neutral-300 rounded-2xl  p-4 m-8'>
-            <div className='flex justify-between gap-24'>
-              <p className='font-bold text-xs '>قیمت کالاها(1)</p>
-              <div className='flex justify-between'>
-                <p className='font-bold text-xs'>{Number(totalprice).toLocaleString('en')}</p>
-                <img
-                  className='w-4 h-4 gap-1'
-                  src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
-                  alt=''
-                />
+          <div className='m-8'>
+            <div className='border border-neutral-300 rounded-2xl  p-4 m-8 '>
+              <div className='flex justify-between gap-24'>
+                <p className='font-bold text-xs  '>قیمت کالاها(1)</p>
+                <div className='flex justify-between'>
+                  <p className='font-bold text-xs'>{Number(totalprice).toLocaleString('en')}</p>
+                  <img
+                    className='w-4 h-4 gap-1'
+                    src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
+                    alt=''
+                  />
+                  <br></br>
+                </div>
+              </div>
+              <div className='m-2'>
+                <div className='flex justify-between gap-24 -m-2'>
+                  <p className='font-bold text-xs '>جمع سبد خرید</p>
+                  <div className='flex justify-between'>
+                    <p className='font-bold text-xs'>{Number(totalprice).toLocaleString('en')}</p>
+                    <img
+                      className='w-4 h-4 gap-1'
+                      src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
+                      alt=''
+                    />
+                  </div>
+                </div>
+                <button className='mt-7 bg-red-500 hover:bg-red-700 text-white font-bold py-2  px-20 border text-xs border-red-700 rounded'>
+                  تایید و تکمیل سفارش
+                </button>
               </div>
             </div>
-            <p>ddf</p>
           </div>
         </div>
       </div>

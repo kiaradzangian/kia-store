@@ -10,8 +10,9 @@ app.use(
 );
 app.get("/", (req, res) => {
   const data = {
+    id: 0,
     name: "گوشی موبایل تکنو مدل vflip ظرفیت 256 و رم 8",
-    price: "29,799,000",
+    price: "29799000",
     rang: "رنگ:مشکی",
 
     features: [
