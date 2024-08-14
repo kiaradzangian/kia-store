@@ -91,7 +91,7 @@ export default function Cart() {
                   <div className='flex justify-between'>
                     <p className='font-bold text-xs'>{Number(totalprice).toLocaleString('en')}</p>
                     <img
-                      className='w-4 h-4 gap-1'
+                      className='w-4 h-4 '
                       src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
                       alt=''
                     />
@@ -102,6 +102,10 @@ export default function Cart() {
                 </button>
               </div>
             </div>
+            <p className='flex justify-around'>
+              هزینه این سفارش هنوز پرداخت نشده‌<br></br> و در صورت اتمام موجودی، کالاها <br></br>از
+              سبد حذف می‌شوند
+            </p>
           </div>
         </div>
       </div>
