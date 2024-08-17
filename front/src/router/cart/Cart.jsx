@@ -13,6 +13,7 @@ export default function Cart() {
   }, [product]);
   return (
     <div>
+      <h1>dzfzdsf</h1>
       <Headers />
 
       <div className='flex justify-start gap-3 px-8 w-1/2 '>
@@ -82,6 +83,7 @@ export default function Cart() {
                     src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
                     alt=''
                   />
+
                   <br></br>
                 </div>
               </div>
