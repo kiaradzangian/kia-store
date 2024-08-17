@@ -13,13 +13,8 @@ export default function Cart() {
   }, [product]);
   return (
     <div>
-      <h1>dzfzdsf</h1>
-      <h1>dzfzdsf</h1>
-      <h1>dzfzdsf</h1>
-      <h1>dzfzdsf</h1>
-      <h1>dzfzdsf</h1>
-      <h1>dzfzdsf</h1> <h1>dzfzdsf</h1>
       <Headers />
+
       <div className='flex justify-start gap-3 px-8 w-1/2 '>
         <div className='flex justify-start gap-1 border-b-4 w-18 border-red-700 rounded-md p-2   mt-48 '>
           <b>
@@ -44,6 +39,7 @@ export default function Cart() {
           <p className='font-bold text-base text-[#94a3b8] p-2'>خرید بعدی</p>
         </a>
       </div>
+
       <hr className='max-w-full t h-0.5 bg-gray-200 border-0 rounded  dark:bg-gray-700'></hr>
       <br></br>
       <div className='grid grid-flow-col justify-stretch'>
@@ -86,7 +82,6 @@ export default function Cart() {
                     src='https://cdn.iconscout.com/icon/premium/png-512-thumb/toman-8688012-7145210.png?f=webp&w=256'
                     alt=''
                   />
-
                   <br></br>
                 </div>
               </div>
@@ -115,6 +110,7 @@ export default function Cart() {
         </div>
       </div>
       <br></br>
+
       <div className='border border-pink-400 rounded-2xl bg-[url("https://www.digikala.com/statics/img/svg/digiplus/digiplus-purple-pattern.svg")] bg-no-repeat w-1/4 '>
         <img
           className='w-28 m-4'
