@@ -17,6 +17,7 @@ export default function Cart() {
       <h1>dzfzdsf</h1>
       <h1>dzfzdsf</h1>
       <h1>dzfzdsf</h1>
+      <h1>dzfzdsf</h1>
       <Headers />
 
       <div className='flex justify-start gap-3 px-8 w-1/2 '>
