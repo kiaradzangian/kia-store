@@ -22,7 +22,7 @@ const Headers = () => {
                 alt=''
               />
             </Link>
-            <h1>hi</h1>
+
             <form className='m-4'>
               <label
                 form='search'
