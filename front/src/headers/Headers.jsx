@@ -12,7 +12,7 @@ const Headers = () => {
           src='https://dkstatics-public.digikala.com/digikala-adservice-banners/03b08688d54afa1911722b86a42ea1ab367dc8be_1721658632.jpg?x-oss-process=image/quality,q_95/format,webp'
           alt=''
         />
-        <h1>hdfjhdfj</h1>
+
         <div className='flex flex-wrap justify-between items-center  max-w-screen-xl  '>
           <div className='flex '>
             <Link to='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
