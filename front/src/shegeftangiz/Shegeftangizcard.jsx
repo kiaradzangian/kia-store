@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 // import Dastebandi from '../dastebandishegeftangiz/Dastebandi';
-
+import Loopimage from '../shegeftangiz/LoopImage';
 export default function Shegeftangizcard() {
   return (
     <div>
@@ -56,6 +56,7 @@ export default function Shegeftangizcard() {
       </div>{' '}
       <br></br>
       <br />
+      <Loopimage />
       {/* <Dastebandi /> */}
       <br />
     </div>

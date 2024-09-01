@@ -1,15 +1,15 @@
-import { data as images } from '../contants/_image.json';
+import { data as loopimages } from '../contants/_loopimage.json';
 export default function image() {
   return (
     <div>
       <div className=' flex justify-around  p-6  pb-4  pt-5 gap-1 '>
         {' '}
-        {images.map((Image) => {
+        {loopimages.map((Loopimage) => {
           return (
-            <a href='' key={Image.id}>
-              <img className='w-14 h-14 rounded-lg  gap-7' src={Image.img} />
+            <a href='' key={Loopimage.id}>
+              <img className='w-18  h-16 rounded-lg  gap-2' src={Loopimage.img} />
               <div className='text-center flex items-center'>
-                <h6 className=' font-bold flex text-xs text-center'>{Image.text}</h6>
+                <h6 className=' font-bold flex text-xs text-center'>{Loopimage.text}</h6>
               </div>
             </a>
           );
